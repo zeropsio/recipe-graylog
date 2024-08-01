@@ -1,6 +1,6 @@
 services:
-  - hostname: gelfMessageSender
+  - hostname: gelfmessagesender
     type: go@1
 
-    buildFromGit: "https://github.com/zeropsio/recipe-graylog/gelfMessageSender"
-    zeropsSetup: gelfMessageSender
+    buildFromGit: "https://github.com/zeropsio/recipe-graylog/tree/main/gelfMessageSender"
+    zeropsSetup: gelfmessagesender

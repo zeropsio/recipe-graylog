@@ -1,5 +1,5 @@
 zerops:
-  - setup: gelfMessageSender
+  - setup: gelfmessagesender
     build:
       base:  go@1.22
       buildCommands:
