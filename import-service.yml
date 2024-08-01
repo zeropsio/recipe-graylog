@@ -1,0 +1,18 @@
+services:
+  - hostname: graylog
+    type: go@1
+
+    verticalAutoscaling:
+      minVCpu: 2
+      maxVCpu: 5
+      cpuMode: DEDICATED
+      minRam: 4
+      maxRam: 8
+      minDisk: 1
+      maxDisk: 30
+
+    enableSubdomainAccess: true
+
+    buildFromGit: "https://github.com/zeropsio/recipe-graylog"
+
+    zeropsSetup: graylog
